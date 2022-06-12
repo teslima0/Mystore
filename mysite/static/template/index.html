@@ -1,0 +1,859 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ 
+  <title>{% block title %} 
+    kulelap
+    {% endblock %}</title>
+  <!-- Favicons -->
+  {% block content%}
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizLand - v3.7.0
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center" style="background-color: rgb(243, 12, 235) !important;">
+    <div class="container d-flex justify-content-center justify-content-md-between" >
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">kkunlelap@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+2347033874621</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'website:homepage' %}"><h2 style="color: fuchsia; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Kunle<span style="color: black; ">Lap</span> Enterprise</h2></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul style="font-size: large !important;"> 
+          <li><a class="nav-link scrollto" href="{% url 'website:homepage' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          
+          
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="#faq">Faq</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'Product:showProducts' %}">Our Stores </a></li>
+          
+          <li><a class="nav-link scrollto" href="{% url 'website:contacting' %}">Contacts us</a></li>
+          <!--<li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>-->
+          
+          
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>KunleLap</span></h1>
+      <h2>We are relaiable seller of laptop</h2>
+      <div class="d-flex">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">KunleLap Enterprise</a></h4>
+              <p class="description" style="font-size: large;  justify-self: start;; padding: auto;">KunleLap enterprise is one of the leading, futuristic, and prominent suppliers of quality pcs, laptops and their accessories.
+                 We're major in the world of laptop repair and maintenance services, which include window os upgrade and troubleshooting, data backup and recovery,
+                  data disaster recovery, virus and spyware removal and or clean-up service. We open between 8:30am and 8:30pm daily to server our teeming customers best. </p>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4 class="title"><a href=""> Aim Of Extablishment </a></h4>
+              <p class="description" style="font-size: large;"> KunleLab enterprise was aim to
+                bring reliable laptops, mini consoles, 2-in-1 laptops and other electronic gadgets to our customers across the globe. We have a quick delivery mechanism that make 
+                us beat the delivery date. At KunleLap enterprise we are passionate to put smille on our customers face with our budget-friendly products.<br><br>
+              
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-images"></i></div>
+              <h4 class="title"><a href="">Best Deal We Offer</a></h4>
+          
+              <p class="description" style="font-size: large;" >We have come this far, so we are not in doubt of which direction to take when supplying high grade, but budget friendly products to our customers. With our purchasing power, 
+                you can make a lot of saving. Regardless of you budget, we ensure that we deliver a perfect product that match your budget. 
+                We work tirelessly to ensure that we supply you with the most reliable, affordable and guaranteed products. In addition, we provide an excellent customer service and friendly support.
+                 </p>
+
+              
+            </div>
+          </div>
+
+          
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Value For Your Money </a></h4>
+              <p class="description" style="font-size: large;">
+                We didn’t just set out to make money, we ensure that our customers get values for their money. That is why many of our long-term customers buy repeatedly from us. We take pride in our high-quality, tested and functioning products. 
+                It’s on this basis of integrity our business flourish.  We are best in listening to every customer feedbacks, and every email
+                that suggest the direction for improvement.
+                </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    
+   
+
+    <!-- ======= About Section ======= -->
+<section id="about" class="about section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>About</h2>
+      <h4>Some Words <span>About Us</span></h4>
+      <p style="text-align: center; font-size: large;"> KunleLap enterprise was founded in year 2018 as a retailer in selling pcs, laptops and  their accessories in Ile-Ife, Osun State Nigeria.  </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <img src="{% static 'assets/img/about22.jpg'%}" style="height: 500px  !important; width: 600px;" class="img-fluid" alt="about-image">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <h3>Who We Are</h3>
+        <p class="fst-italic" style="font-size: large;">
+          KunleLap enterprise is one of the leading wholesale and retail company that offer affordable and durable brand-new laptop, UK used laptops, pcs, computer accessories and other electronic gadgets.
+           We have successfully built our reputation on diligence, dedication, reliability and customer-centered service. <br><br>Satisfying customers isn’t the most important goals but the only goal we set out to achieve.
+            We are customer-oriented so we are committed in finding innovative ideas to improve the shopping experience of our customers with us.  Choose KunleLap enterprise when you need an affordable, durable,
+             and quality laptops. We go out of our comfort zone to ensure you get the best customer experience. We highly valued our customers and the reputation we worked hard to build. <br><br>If there’s something we need 
+             to improve on kindly feed us back so that we can continue to serve you better. We have maintained good rapport with our customers which informed our next line of actions to better served them. We will not 
+             relent until you are satisfy with our products and service. <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx"></i>more</a>
+
+        </p>
+        
+       
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Section -->
+
+
+
+    <!-- ======= Counts Section ======= -->
+    <!--
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> End Counts Section -->
+      
+
+    <!-- ======= Clients Section ======= -->
+    <!--
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'assets/img/clients/client-1.png'%}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'assets/img/clients/client-2.png'%}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'assets/img/clients/client-3.png'%}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'assets/img/clients/client-5.png'%}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="{% static 'assets/img/clients/client-6.png'%}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+        -->
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+  
+        <div class="section-title">
+          <h2>Services</h2>
+          <h3>Check our <span>Services</span></h3>
+          
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-store-alt"></i></div>
+              <h4><a href="">Laptops Services</a></h4>
+              <p class="pt-4 pt-lg-0 content d-flex flex-column justify-content-center col-md-11 " style="text-align: justify;  font-size: large;">
+                KunleLap enterprise is located at zone d block 4, oau central market, ile-ife, osun state. Apart from Sunday, the Shop open every day of the week between 08:30am to 8pm. 
+                We sell both new and UK used laptops of different reliable brands. You can swap your old laptop for new one with small money. 
+                 <br><br><br><br>We are available for home and business support in repairing your laptop, pcs and maintain them. 
+                 You may need to book appoint with our engineer to visit your home or office, kindly contact us with the request
+                 kkunlelap@gmail.com.
+              </p>
+              
+            </div>
+          </div>
+  
+          <div class="col-md-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              
+              <h4 style="  padding-bottom: 15px;"> <a href="" >Support and Maintenance</a></h4>
+                    <h6  style=" font-size: large;">These are the services you  can get from us:</h6>
+                    
+          <ul style=" text-align: justify; font-size: large;">
+      <li> Data backup and recovery.</li>
+
+      <li> Data disaster recovery and support.</li>
+  
+      <li> PC hardware upgrades and repairs.</li>
+  
+      <li> Windows os upgrade & troubleshooting.</li>
+  
+      <li> Virus/spyware removal and clean-up.</li> 
+  
+      <li> Sales of new & uk used laptops at affordable price.</li>
+          </ul> 
+                 
+                   
+                    
+                   
+            </div>
+          </div>
+  
+          <div class="col-md-4 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300" >
+            <div class="icon-box" >
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">In-Store Service:</a></h4>
+              <ul style=" text-align: justify; font-size: large; padding-left: 25px;">
+          <li>Smart PC Repairs and Maintenance.</li>
+  
+          <li> Virus Scan Removal Services.</li> 
+  
+          <li> Data Back-up and Recovery Services.</li>
+  
+          <li> Laptop Upgrades and Repairs.</li>
+  
+          <li> One-On-One Computer Training.</li>
+  
+              </ul>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Home Service</a></h4>
+              <p style="text-align: justify; font-size: large;"> In your comfort zone, we offer quick response system support within Osun and its environs. We visit you immediately we receive request from you, and when that is not possible, our technical support team will visit you within 48 hours. 
+                When you contact us, we will fix time that is most convenient for you. For example, if we tell you we are coming to you by 9:0am, be rest assure that we will arrive on or before 9:00am.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Why you need our system support:</a></h4>
+              
+                <ul style=" text-align: justify; font-size: large;">
+              <li>General computer support.</li>
+              <li>Data backup. </li>
+            
+              <li>System slowing down.</li>
+                <li>System crashes. </li>
+              
+                  <li>Hard drive recovery.</li> 
+                    <li>Emergency recovery.</li> 
+                      <li>Data recovery.</li>
+                        <li>System restoration</li>
+                          <li>Security awareness.</li>
+  
+              
+                            <li>Hardware installation.</li>
+              
+                              <li>Software installation issues. </li>
+                                <li>Software upgrades.</li>
+            
+            </ul>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Replacement of parts</a></h4>
+              <p style="text-align: justify; font-size: large;">
+                
+                We offer authentic laptop part replacement and accessories, as well as compatible third party, refurbished and parts exchange. We also offer quick laptop screen repair at affordable price. 
+                It doesn’t matter if your laptop is affected by visible lines down the screen, dim screen, or a damaged/ cracked screen, we can assist.
+                </p>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Services Section -->
+ 
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin sugar pure consequences sem cure worthy ssim until the ferry entum receives the Zen. What the accusers need, it's just, it needs some free analysis. Some smile, but always.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-2.jpg'%}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg'%}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  For if not for the labor of those who export, for the labor of those who are important, for those who are not whom it will come to be, whose labor is at the least, the labor of which it was at our duss, that it is likely that there will be one who was minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-4.jpg'%}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg'%}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Who of whom some things are which I will read would be I was irure some will come to time our pardon for the fault of the labor of the duis are the fault no him cillum escheat I will read that he will come, the fault would be nothing but cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    
+
+    <!-- ======= Team Section ======= 
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <h3>Our Hardworking <span>Team</span></h3>
+          <p>So that we may be able to achieve the pleasures and pleasures of life.
+
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-1.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-2.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-3.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-4.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>-->
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= 
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <h3>Check our <span>Pricing</span></h3>
+          <p>So that we may be able to achieve the pleasures and pleasures of life.
+
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Don't miss the players</li>
+                <li>Cut out none at the weekend</li>
+                <li class="na">mass immigration</li>
+                <li class="na">mass compensation</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Don't miss the players</li>
+                <li>Cut out none at the weekend</li>
+                <li>mass immigration</li>
+                <li class="na">Mass compensation</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>-->
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <h3>Frequently Asked <span>Questions</span></h3>
+          <p>some of the most frequently asked question by our potential customers</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ul class="faq-list">
+
+              <li>
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Q. Do you save my credit card information? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    No. we don’t save your card information. While you are purchasing, you will input your atm card information directly to the payment gateway. Summarily, all your card information will be collected by card payment gateway which is mostly reliable. 
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Q. Is it possible to Cancel Order?
+
+                  <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                   A. please reach out to us on phone or send email to kkulelap@gmail.com
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Q. is my personal information submitted on your website safe?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                   A. We are committed in protecting you personal information with us.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Q. When are return of product bought not possible? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    A. There are some scenerios where we won't be able to support returns:
+                    <ul>
+                      <li>
+                           Request to return is made after the specified time interval.
+                      </li>
+                      <li>
+                        The damage is from you or the product is not in the same condition as you received.
+                      </li>
+                      <li>
+                        If you misplace anything from the package given to you including price tag,labels, original packing, freebiees and accessories.
+                      </li>
+                      <li>
+                        Products with altered or missing serial number.
+                      </li>
+                     
+                    </ul>
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Q. Is there any minimum amount of order i can make?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                   A. No. you can order as much or as little you want from our stores. At kunlelap enterprise, we vwlued all the order regsrdless of the amount involve.
+
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Q. I'm looking for a product thst is not listed on you website, any way out? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                  <p>
+                    A. If a product is missing on our website, it doesnt necessarily mean it is out of store. If what you are looking for on our website is not there, kindly contact at kkunlelap@gmail.com. We will imediately make such product is made available on line, and send you notification mail. 
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    
+  </main><!-- End #main -->
+  {% endblock %}
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+<!--
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>However, none of the things I will read but it is our great fault that I will read many</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <div class="footer-top"  style="background-color:rgba(230, 235, 240, 0.404);">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>KunleLap<span>.</span></h3>
+            <p>
+              Zone D Block 2 Shop 4, <br>
+              OAU Central Market, Ile-Ife, <br>
+              Osun State<br>
+              Nigeria. <br><br>
+              <strong>Phone:</strong> +2347033874621<br>
+              <strong>Email:</strong> kkunlelap@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'website:homepage' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Products</h4>
+            <ul>
+              
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Product:showProducts' %}">PCs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Product:showProducts' %}">Laptops</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Product:showProducts' %}">Phone</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'Product:showProducts' %}">Accessories</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>You can contact us from any of our bellow social media platforms.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+ 
+</body>
+
+</html>

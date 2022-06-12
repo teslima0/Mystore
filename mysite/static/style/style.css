@@ -1,0 +1,8 @@
+body {
+    background-color: aliceblue !important;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+ nav, ul, li {
+      display: block !important;
+  }
